@@ -20,4 +20,5 @@ int main(void)
 		c += 1;
 	} while (c <= 'Z');
 	printf("\n");
+	return (0);
 }
