@@ -1,6 +1,7 @@
 #ifndef MAIN_H
 #define MAIN_H
 
+int _islower(int c);
 void print_times_table(int n);
 void print_to_98(int n);
 int add(int, int);
