@@ -1,5 +1,13 @@
 #include "main.h"
 
+/**
+ * print_sign - checks state of number
+ *
+ * @n: integer input
+ *
+ * Return: -1, 0, 1 depending on value state
+ */
+
 int print_sign(int n)
 {
 	if (n > 0)
@@ -15,7 +23,7 @@ int print_sign(int n)
 	else
 	{
 		_putchar(45);
-		return(-1);
+		return (-1);
 	}
 	_putchar('\n');
 }
