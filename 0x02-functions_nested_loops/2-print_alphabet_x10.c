@@ -1,11 +1,11 @@
 #include "alphabet.h"
 
 /**
- * main -Entry point
+ * print_alphabet_x10 -Entry point
  *
  * Return: value 0 (Success)
  */
-int main(void)
+void print_alphabet_x10(void)
 {
 	int i;
 
