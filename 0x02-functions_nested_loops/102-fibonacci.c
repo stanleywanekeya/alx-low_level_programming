@@ -13,12 +13,13 @@ int main(void)
 	{
 		sum = fib + fib1;
 		printf("%lu", sum);
+		if (i != 49)
+		{
+			printf(", ");
+		}
 		fib = fib1;
 		fib1 = sum;
-		if (sum == 49)
-			printf("\n");
-		else
-			printf(", ");
 	}
+	printf("\n");
 	return (0);
 }
