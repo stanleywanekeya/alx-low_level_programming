@@ -1,6 +1,10 @@
 #ifndef MAIN_H
 #define MAIN_H
 
+void print_times_table(int n);
+void print_to_98(int n);
+int add(int, int);
+void print_alphabet_x10(void);
 void print_alphabet(void);
 int _putchar(char c);
 int print_sign(int n);
