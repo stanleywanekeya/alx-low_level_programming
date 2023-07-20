@@ -25,7 +25,7 @@ int main(void)
 			n /= i;
 		}
 	}
-	if (n > 2)
+	if (n > max)
 		max = n;
 	printf("%ld\n", max);
 	return (0);
