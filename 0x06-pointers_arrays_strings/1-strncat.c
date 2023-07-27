@@ -1,7 +1,7 @@
 #include "main.h"
 
 /**
- * _srrncat - copies n numbers from src to destination
+ * _strncat - copies n numbers from src to destination
  * @dest: ppointer argument to destination
  * @src: pointer argument to source
  * @n: number argument to ber copied from source
