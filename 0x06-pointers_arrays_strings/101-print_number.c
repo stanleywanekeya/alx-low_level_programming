@@ -1,7 +1,7 @@
 #include "main.h"
 
 /**
- * print_numbers - print absolute values
+ * print_number - print absolute values
  * @n: integer argument
  */
 void print_number(int n)
