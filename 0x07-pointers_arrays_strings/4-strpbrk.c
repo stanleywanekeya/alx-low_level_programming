@@ -1,10 +1,10 @@
 #include "main.h"
 
 /**
- * _strpbrk - return the bytes in s
+ * _strpbrk - Entry point
  * @s: char pointer
  * @accept: char pointer
- * Return value: pointer to string
+ * Return: value pointer to string
  */
 char *_strpbrk(char *s, char *accept)
 {
