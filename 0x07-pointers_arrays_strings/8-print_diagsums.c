@@ -1,24 +1,23 @@
 #include "main.h"
 
 /**
- * print_diagsums - print sums of diagonals
+ * print_diagsums - print sum of diagonals in matrix
  * @a: pointer argument
  * @size: integer argument
  */
 void print_diagsums(int *a, int size)
 {
-	int i, j = 0, right = 0, left = 0, sum = 0;
+	int sum1, sum2, y;
 
-	for (i = 0; i < size; ++i)
+	sum1 = 0;
+	sum2 = 0;
+	for (y = 0; y < size; y++)
 	{
-		right += a[i][j];
-		j += 1;
+		sum1 = sum1 + a[y * size + y];
 	}
-	for (j; j >= 0; --j)
+	for (y = size - 1; y >= 0; y--)
 	{
-		left += a[i][j];
-		i -= 1;
+		sum2 += a[y * size + (size - y - 1)];
 	}
-	sum = right + left;
-	printf("%d", sum);
+	printf("%d, %d\n", sum1, sum2);
 }
