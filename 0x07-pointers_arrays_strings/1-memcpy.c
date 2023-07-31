@@ -4,7 +4,7 @@
  * _memcpy - copies memory from source to destination
  * @dest: pointer argument
  * @src: pointer argument
- * n: integer argument
+ * @n: integer argument
  *Return: value s as pointer
  */
 char *_memcpy(char *dest, char *src, unsigned int n)
