@@ -16,6 +16,7 @@ int is_palindrome(char *s)
 
 /**
  * str_len - find length of string s
+ * @s: integer argument
  * Return: length of string
  */
 int str_len(char *s)
