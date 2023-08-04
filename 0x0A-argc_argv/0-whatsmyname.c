@@ -7,8 +7,8 @@
  * @argv: command line vector
  *Return: value 0 for success
  */
-int main(int argc, char **argv)
+int main(int argc__attribute__((unused)), char **argv)
 {
-	printf("%s\n", argv[0]);
+	printf("%s\n", argv);
 	return (0);
 }
