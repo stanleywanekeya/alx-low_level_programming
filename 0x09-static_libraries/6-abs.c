@@ -7,10 +7,11 @@
  *
  * Return: absolute values
  */
-int _abs(int c)
+int _abs(int n)
 {
-	if (c >= 0)
-		return (c);
-	else
-		return (c * -1);
+	if (n >= 0)
+	{
+		return (n);
+	}
+	return (-n);
 }
