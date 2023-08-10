@@ -1,5 +1,22 @@
 #include "main.h"
 #include <stdlib.h>
+/**
+ * *_memset - fills memory with a constant byte
+ * @s: memory area to be filled
+ * @b: char to copy
+ * @n: number of times to copy b
+ * Return: pointer to the memory area s
+ */
+char *_memset(char *s, char b, unsigned int n)
+{
+	unsigned int i;
+
+	for (i = 0; i < n; i++)
+	{
+		s[i] = b;
+	}
+	return (s);
+}
 
 /**
  * _calloc - acquires n bytes memory block
@@ -9,17 +26,14 @@
  */
 void *_calloc(unsigned int nmemb, unsigned int size)
 {
-	int i, n, *res;
+	char *res;
 
 	if (nmemb == 0 || size == 0)
 		return (NULL);
-	res = malloc(sizeof(size) * nmemb);
-	if (!res)
+	res = malloc(size * nmemb);
+	if (res == NULL)
 		return (NULL);
-	n = size * nmemb;
-	for (i = 0; i < n; ++i)
-	{
-		res[i] = 0;
-	}
+	_memset(res, 0, nmemb * size);
 	return (res);
 }
+
