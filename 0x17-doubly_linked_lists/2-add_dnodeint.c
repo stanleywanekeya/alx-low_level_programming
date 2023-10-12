@@ -1,5 +1,11 @@
 #include "lists.h"
 
+/**
+ * add_dnodeint - adds to front of list
+ * @head: list of operation
+ * @n: integer content of the node
+ * Return: new node
+ */
 dlistint_t *add_dnodeint(dlistint_t **head, const int n)
 {
 	dlistint_t *new;
