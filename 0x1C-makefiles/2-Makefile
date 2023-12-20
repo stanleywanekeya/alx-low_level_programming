@@ -1,8 +1,1 @@
-
-SCR = main.o school.c
-CC = gcc
-OBJ = $(patsubst %.c, %.o, ($SRC)
-NAME = school
-
-all: $(OBJ)
-	$(CC) $(OBJ) -o $(NAME)
+snlsdn
